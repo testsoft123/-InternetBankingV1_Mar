@@ -20,5 +20,6 @@ public class TC_004_EditCustomerTest  extends BaseClass{
 		editCustomerPage.clickEditCustomer();
 		editCustomerPage.enterCoustomerID(ReadConfig.readPropertyFileData("customerId", "editCustomer"));
 		editCustomerPage.submitCustomerId();
+		captureScreen(driver, "EditCustomerTest");
 	}
 }

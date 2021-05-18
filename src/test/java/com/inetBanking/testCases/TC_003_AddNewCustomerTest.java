@@ -48,7 +48,7 @@ public class TC_003_AddNewCustomerTest  extends BaseClass{
 			captureScreen(driver, "addNewCustomer");
 			Assert.assertTrue(false);
 		}
-		
+		captureScreen(driver, "addNewCustomer");
 	}
 
 	
