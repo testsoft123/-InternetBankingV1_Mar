@@ -1,5 +1,4 @@
-21/05/17 20:52:28 : URL is opened
-21/05/17 20:52:29 : Enter username
-21/05/17 20:52:29 : Enter password
-21/05/17 20:52:34 : login test passes
-21/05/17 20:52:48 : Add New CustomerTest Passed
+21/05/18 16:05:05 : URL is opened
+21/05/18 16:05:06 : Enter username
+21/05/18 16:05:06 : Enter password
+21/05/18 16:05:08 : login test passes

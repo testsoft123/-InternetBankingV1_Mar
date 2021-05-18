@@ -43,6 +43,10 @@ public class Page_007_EditAccount {
 	@CacheLookup
 	WebElement typeOfAccountEle;
 	
+	@FindBy(name = "AccSubmit")
+	@CacheLookup
+	WebElement editSubmitEle;
+	
 /********************************Action******************************/
 	
 	public void editAccountLink() {
@@ -50,16 +54,19 @@ public class Page_007_EditAccount {
 	}
    
 	public void accountNumber() {
-		accountNumberEle.sendKeys(ReadConfig.readPropertyFileData("accountNumber", "config"));
+		accountNumberEle.sendKeys(ReadConfig.readPropertyFileData("accountNumber", "editCustomer"));
 	}
 	
-	public void submitAccount() {
+	public void submitAccountBtn() {
 		submitBtnEle.click();
 	}
 	
 	public void selectAccountType() {
 		Select select_account = new Select(typeOfAccountEle);
-		select_account.selectByVisibleText(ReadConfig.readPropertyFileData("accountType", "config"));
+		select_account.selectByVisibleText(ReadConfig.readPropertyFileData("accountType", "editCustomer"));
 		
+	}
+	public void editSubmitBtn() {
+		editSubmitEle.click();
 	}
 }
