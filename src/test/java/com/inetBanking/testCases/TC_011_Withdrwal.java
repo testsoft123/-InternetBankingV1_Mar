@@ -1,9 +1,5 @@
 package com.inetBanking.testCases;
 
-/** @Author Ambika
-*
-*/
-
 import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +7,10 @@ import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.Page_008_Deposite;
 
-public class TC_010_Deposit extends BaseClass {
+/** @Author Ambika
+*
+*/
+public class TC_011_Withdrwal extends BaseClass {
 
 	@BeforeMethod
 	public void login() throws IOException {
@@ -23,7 +22,7 @@ public class TC_010_Deposit extends BaseClass {
 	public void deposit() {
 
 		Page_008_Deposite deposite = new Page_008_Deposite(driver);
-		deposite.depositLink();
+		deposite.withdrawalLink();
 		deposite.details();
 		deposite.resetBtn();
 		deposite.details();

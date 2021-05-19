@@ -14,7 +14,7 @@
     <classes>
     <!--   <class name="com.inetBanking.testCases.TC_LoginTest_001"/>
        <class name="com.inetBanking.testCases.TC_LoginDDT_002"/> -->
-       <!-- <class name="com.inetBanking.testCases.TC_003_AddNewCustomerTest"/> -->
+       <class name="com.inetBanking.testCases.TC_003_AddNewCustomerTest"/>
       <!--   <class name="com.inetBanking.testCases.Tc_EditCustomerTest_004"/> -->
        <!-- <class name="com.inetBanking.testCases.TC_EditCustomerDDT_005"/> --> 
       <!--   <class name="com.inetBanking.testCases.TC_006_DeleteCustomer"/> -->
@@ -22,7 +22,7 @@
           <!--   <class name="com.inetBanking.testCases.TC_008_EditAccount"/> -->
           
            <!--  <class name="com.inetBanking.testCases.TC_009_DeleteAccount"/> -->
-              <class name="com.inetBanking.testCases.TC_010_Deposit"/>
+             <!--  <class name="com.inetBanking.testCases.TC_010_Deposit"/> -->
            
     </classes>
   </test> <!-- Test -->

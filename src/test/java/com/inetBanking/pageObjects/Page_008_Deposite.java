@@ -25,6 +25,10 @@ public class Page_008_Deposite {
 	@FindBy(linkText = "Deposit")
 	@CacheLookup
 	WebElement depositLinkEle;
+	
+	@FindBy(linkText = "Withdrawal")
+	@CacheLookup
+	WebElement withdrawalLinkEle;
 
 	@FindBy(name = "accountno")
 	@CacheLookup
@@ -51,6 +55,10 @@ public class Page_008_Deposite {
 	public void depositLink() {
 		depositLinkEle.click();
 	}
+	
+	public void withdrawalLink() {
+		withdrawalLinkEle.click();
+	}
 
 	public void accountNumber() {
 		accountNumberEle.sendKeys(ReadConfig.readPropertyFileData("accountNumber", "config"));
@@ -73,7 +81,7 @@ public class Page_008_Deposite {
 	}
 
 	/************ main Action **************/
-	public void depositDetails() {
+	public void details() {
 		
 		accountNumber();
 		amount();

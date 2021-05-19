@@ -1,4 +1,1 @@
-21/05/19 21:06:06 : URL is opened
-21/05/19 21:06:06 : Enter username
-21/05/19 21:06:07 : Enter password
-21/05/19 21:06:09 : login test passes
+21/05/19 23:11:39 : URL is opened
