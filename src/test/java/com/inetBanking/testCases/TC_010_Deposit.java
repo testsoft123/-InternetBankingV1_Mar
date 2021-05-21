@@ -9,7 +9,7 @@ import java.io.IOException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.inetBanking.pageObjects.Page_008_Deposite;
+import com.inetBanking.pageObjects.Page_008_DepositeWithdrawal;
 
 public class TC_010_Deposit extends BaseClass {
 
@@ -22,7 +22,7 @@ public class TC_010_Deposit extends BaseClass {
 	@Test
 	public void deposit() {
 
-		Page_008_Deposite deposite = new Page_008_Deposite(driver);
+		Page_008_DepositeWithdrawal deposite = new Page_008_DepositeWithdrawal(driver);
 		deposite.depositLink();
 		deposite.details();
 		deposite.resetBtn();

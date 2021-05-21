@@ -7,13 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.inetBanking.testCases.TC_003_AddNewCustomerTest">
+      <class name="com.inetBanking.testCases.TC_013_BalenceMiniStatment">
         <methods>
+          <include name="balenceEnquiry"/>
           <include name="setUp"/>
+          <include name="login"/>
           <include name="tearDown"/>
-          <include name="addNewCustomer"/>
         </methods>
-      </class> <!-- com.inetBanking.testCases.TC_003_AddNewCustomerTest -->
+      </class> <!-- com.inetBanking.testCases.TC_013_BalenceMiniStatment -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [suite] -->

@@ -5,12 +5,12 @@ import java.io.IOException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.inetBanking.pageObjects.Page_008_Deposite;
+import com.inetBanking.pageObjects.Page_008_DepositeWithdrawal;
 
 /** @Author Ambika
 *
 */
-public class TC_011_Withdrwal extends BaseClass {
+public class TC_011_Withdrawal extends BaseClass {
 
 	@BeforeMethod
 	public void login() throws IOException {
@@ -21,7 +21,7 @@ public class TC_011_Withdrwal extends BaseClass {
 	@Test
 	public void deposit() {
 
-		Page_008_Deposite deposite = new Page_008_Deposite(driver);
+		Page_008_DepositeWithdrawal deposite = new Page_008_DepositeWithdrawal(driver);
 		deposite.withdrawalLink();
 		deposite.details();
 		deposite.resetBtn();

@@ -8,31 +8,32 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.inetBanking.utilities.ReadConfig;
 
-/**
- * @Author Ambika
- *
- */
-public class Page_008_Deposite {
+/** @Author Ambika
+*
+*/
+public class Page_009_Fundtransfer {
+	
+	
 
 	WebDriver localDriver;
 
-	public Page_008_Deposite(WebDriver remoteDriver) {
+	public Page_009_Fundtransfer(WebDriver remoteDriver) {
 		localDriver = remoteDriver;
 		PageFactory.initElements(remoteDriver, this);
 	}
 
 	/*************** locating element *********************/
-	@FindBy(linkText = "Deposit")
+	@FindBy(linkText = "Fund Transfer")
 	@CacheLookup
-	WebElement depositLinkEle;
+	WebElement transferEle;
 	
-	@FindBy(linkText = "Withdrawal")
+	@FindBy(name = "payersaccount")
 	@CacheLookup
-	WebElement withdrawalLinkEle;
+	WebElement payersaccountEle;
 
-	@FindBy(name = "accountno")
+	@FindBy(name = "payeeaccount")
 	@CacheLookup
-	WebElement accountNumberEle;
+	WebElement payeeaccountEle;
 
 	@FindBy(name = "ammount")
 	@CacheLookup
@@ -49,27 +50,31 @@ public class Page_008_Deposite {
 	@FindBy(name = "res")
 	@CacheLookup
 	WebElement resetBtnEle;
+	
+
+	
 
 	/************************** Action **************************/
 
-	public void depositLink() {
-		depositLinkEle.click();
+	public void fundTransferLink() {
+		transferEle.click();
 	}
 	
-	public void withdrawalLink() {
-		withdrawalLinkEle.click();
-	}
+	
 
-	public void accountNumber() {
-		accountNumberEle.sendKeys(ReadConfig.readPropertyFileData("accountNumber", "config"));
+	public void payersAccount() {
+		payersaccountEle.sendKeys(ReadConfig.readPropertyFileData("payersAccount", "config"));
+	}
+	public void payeeAccount() {
+		payeeaccountEle.sendKeys(ReadConfig.readPropertyFileData("payeeAccount", "config"));
 	}
 
 	public void amount() {
-		amountEle.sendKeys(ReadConfig.readPropertyFileData("amount", "config"));
+		amountEle.sendKeys(ReadConfig.readPropertyFileData("amountTransfer", "config"));
 	}
 
 	public void description() {
-		descriptionEle.sendKeys(ReadConfig.readPropertyFileData("description", "config"));
+		descriptionEle.sendKeys(ReadConfig.readPropertyFileData("descriptionTrans", "config"));
 	}
 
 	public void submitBtn() {
@@ -79,11 +84,17 @@ public class Page_008_Deposite {
 	public void resetBtn() {
 		resetBtnEle.click();
 	}
+	
 
+	
+	
+	
+	
 	/************ main Action **************/
 	public void details() {
 		
-		accountNumber();
+		payersAccount();
+		payeeAccount();
 		amount();
 		description();
 	}
