@@ -25,8 +25,9 @@
              <!--  <class name="com.inetBanking.testCases.TC_010_Deposit"/> -->
             <!--  <class name="com.inetBanking.testCases.TC_011_Withdrawal"/> -->
           <!--    <class name="com.inetBanking.testCases.TC_012_Fundtransfer"/> -->
-           <class name="com.inetBanking.testCases.TC_013_Balence"/>
-            <class name="com.inetBanking.testCases.TC_014_MiniStatment"/>
+          <!--  <class name="com.inetBanking.testCases.TC_013_Balence"/>
+            <class name="com.inetBanking.testCases.TC_014_MiniStatment"/> -->
+             <class name="com.inetBanking.testCases.TC_015_LogOut"/>
            
     </classes>
   </test> <!-- Test -->
