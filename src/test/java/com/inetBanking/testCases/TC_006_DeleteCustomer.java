@@ -1,8 +1,6 @@
 package com.inetBanking.testCases;
 
 import java.io.IOException;
-
-import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.Page_004_DeleteOperation;

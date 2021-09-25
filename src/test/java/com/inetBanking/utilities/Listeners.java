@@ -60,6 +60,7 @@ public class Listeners extends TestListenerAdapter {
 																							// to the report with GREEN
 																							// color highlighted
 
+		@SuppressWarnings("unused")
 		String screenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + tr.getName() + ".png";
 		try {
 			//logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));

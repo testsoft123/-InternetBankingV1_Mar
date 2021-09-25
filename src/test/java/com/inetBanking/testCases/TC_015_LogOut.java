@@ -1,12 +1,10 @@
 package com.inetBanking.testCases;
 
 import java.io.IOException;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import com.inetBanking.pageObjects.Page_009_Fundtransfer;
 import com.inetBanking.pageObjects.Page_011_LogOut;
+
 
 /** @Author Ambika
 *
@@ -20,10 +18,11 @@ public class TC_015_LogOut extends BaseClass {
 	}
 
 	@Test
-	public void logOut() {
+	public void logOut() throws IOException {
 
 		Page_011_LogOut logOut = new Page_011_LogOut(driver);
 		logOut.logOutLink();
 		acceptAlert();
+      captureScreen(driver, "logout");
 	}
 }

@@ -1,13 +1,10 @@
 package com.inetBanking.testCases;
 
 import java.io.IOException;
-
-import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.inetBanking.pageObjects.Page_002_AddNewCustomer;
-import com.inetBanking.pageObjects.Page_001_Login;
+
 
 public class TC_003_AddNewCustomerTest  extends BaseClass{
 	

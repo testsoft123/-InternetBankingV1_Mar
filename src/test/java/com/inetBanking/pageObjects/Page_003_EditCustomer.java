@@ -2,8 +2,6 @@ package com.inetBanking.pageObjects;
 /**
  * @author user: ambika
  */
-import java.sql.Driver;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;

@@ -1,4 +1,10 @@
-21/05/25 22:32:04 : URL is opened
-21/05/25 22:32:04 : Enter username
-21/05/25 22:32:05 : Enter password
-21/05/25 22:32:11 : login test passes
+21/09/25 16:46:39 : copy the backup of screenShot Folder
+21/09/25 16:46:39 : Clearing the Screenshot Folder Content
+21/09/25 16:46:39 : copy the backup of ExtentReport Folder
+21/09/25 16:46:39 : Clearing the ExtentReport Folder Content
+21/09/25 16:46:53 : URL is opened
+21/09/25 16:46:54 : Enter username
+21/09/25 16:46:54 : Enter password
+21/09/25 16:46:56 : login test passes
+21/09/25 16:47:05 : Add New CustomerTest Passed
+21/09/25 16:47:06 : screen shot taken

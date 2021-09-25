@@ -6,11 +6,9 @@ package com.inetBanking.testCases;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.inetBanking.pageObjects.Page_006_AddNewAccount;
-import com.inetBanking.utilities.ReadConfig;
+
 
 public class TC_007_AddNewAccount extends BaseClass {
 	
